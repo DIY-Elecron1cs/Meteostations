@@ -1,6 +1,6 @@
 #include "IRremote.h"
 
-IRrecv irrecv(2);
+IRrecv irrecv(6);
 
 decode_results results;
 
@@ -11,7 +11,7 @@ void setup() {
 
 void loop() {
   if ( irrecv.decode( &results )) {
-    Serial.println( results.value, HEX );
+    Serial.println(results.value);
     irrecv.resume();
   }
 }
