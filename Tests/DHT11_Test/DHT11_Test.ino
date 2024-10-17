@@ -1,5 +1,5 @@
 #include <DHT11.h>
-DHT11 dht11(2);
+DHT11 dht11(4);
 
 void setup(){
   Serial.begin(9600);
